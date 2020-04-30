@@ -1,0 +1,180 @@
+:root {
+  --font-family: sans-serif;
+  font-size: 16px;
+  --color-green: #06c167;
+  --color-grey: rgb(238, 238, 238);
+  --color-greyDarker: rgb(84, 84, 84);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.smallText {
+  font-size: 0.7rem;
+  font-weight: 300;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.container {
+  width: calc(100% - 120px);
+  margin: auto;
+}
+
+header .logo h1 {
+  font-weight: 300;
+}
+header .logo h1 span {
+  font-weight: 600;
+  color: var(--color-green);
+}
+header .container {
+  display: flex;
+  align-items: center;
+}
+header .searchBar {
+  margin-left: auto;
+}
+header .header-option {
+  padding-left: 5rem;
+  letter-spacing: 0.6px;
+  display: flex;
+  align-items: center;
+}
+header .header-option svg {
+  margin-right: 1rem;
+  display: inline-flex;
+}
+header .currentDetails,
+header .searchBar {
+  display: flex;
+}
+
+.options {
+  padding: 1.2rem 0;
+}
+.options .options-btn {
+  background: var(--color-grey);
+  padding: 0.6rem 0.8rem;
+  border-radius: 30px;
+  border: 0;
+  font-family: var(--font-family);
+  font-size: 1rem;
+  letter-spacing: 0.6px;
+  display: inline-flex;
+  align-items: center;
+  margin-right: 0.3rem;
+}
+.options .options-btn svg {
+  max-width: 20px;
+  margin-right: 0.4rem;
+}
+.options .options-btn.selected {
+  background: black;
+  color: white;
+}
+
+.listings {
+  padding: 2rem 0;
+}
+.listings .header {
+  display: flex;
+  align-items: center;
+}
+.listings .header .header-title h2 {
+  font-weight: 400;
+  font-size: 1.7rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0;
+}
+.listings .header .header-title span {
+  color: var(--color-greyDarker);
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+.listings .header .header-viewOptions {
+  display: flex;
+  align-items: center;
+  margin: auto 0 auto auto;
+}
+.listings .header .header-viewOptions .viewAll {
+  color: var(--color-green);
+  padding-right: 2rem;
+}
+.listings .header .header-viewOptions .viewMore .arrow {
+  background: red;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-grey);
+  opacity: 0.3;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+.listings .header .header-viewOptions .viewMore .arrow.darker, .listings .header .header-viewOptions .viewMore .arrow:hover {
+  opacity: 1;
+}
+.listings .circle {
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  display: inline-flex;
+}
+.listings .listings-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.listings .listings-grid .listings-grid-element {
+  width: calc(1 / 3 * 100% - (1 - 1 / 3) * 25px);
+  margin-top: 2rem;
+}
+.listings .listings-grid .listings-grid-element .image {
+  height: 240px;
+  overflow: hidden;
+}
+.listings .listings-grid .listings-grid-element .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.listings .listings-grid .listings-grid-element .text-lower {
+  padding: 0.6rem 0;
+}
+.listings .listings-grid .listings-grid-element .text-lower span {
+  color: var(--color-greyDarker);
+}
+.listings .listings-grid .listings-grid-element .text {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding: 1rem 0;
+}
+.listings .listings-grid .listings-grid-element .text h3 {
+  font-weight: 400;
+  margin-bottom: 0.3rem;
+  margin-top: 0;
+}
+.listings .listings-grid .listings-grid-element .text span {
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+.listings .listings-grid .listings-grid-element .text .rating {
+  margin: auto 0 auto auto;
+  height: 100%;
+}
+.listings .listings-grid .listings-grid-element .text .rating span {
+  height: 40px;
+  width: 40px;
+  background: var(--color-grey);
+  font-size: 1rem;
+  color: black;
+}
+
+/*# sourceMappingURL=/main.48b3db1d.css.map */
