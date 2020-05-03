@@ -127,9 +127,24 @@ header .searchBar {
 }
 .listings .listings-grid {
   display: flex;
+  overflow: hidden;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+.listings .listings-grid::-webkit-scrollbar {
+  display: none;
+}
+.listings .listings-grid .listings-col {
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 100%;
+  scroll-snap-align: start;
+  margin-left: 25px;
 }
 .listings .listings-grid .listings-grid-element {
   width: calc(1 / 3 * 100% - (1 - 1 / 3) * 25px);
