@@ -3,5 +3,6 @@ My own take on Ubereats
 
 
 # to run
-`npm install`
+`npm install` 
+
 `parcel serve index.html`
